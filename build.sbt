@@ -63,7 +63,11 @@ lazy val dist = com.typesafe.sbt.SbtNativePackager.NativePackagerKeys.dist
 
 publish <<= (publish) dependsOn  dist
 
+publishSigned <<= (publishSigned) dependsOn  dist
+
 publishLocal <<= (publishLocal) dependsOn dist
+
+publishLocalSigned <<= (publishLocalSigned) dependsOn dist
 
 val distHack = TaskKey[File]("dist-hack", "Hack to publish dist")
 
