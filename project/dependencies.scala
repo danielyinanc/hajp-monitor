@@ -24,7 +24,8 @@ object Dependencies {
     "org.webjars" % "bootswatch-yeti" % "3.3.1+2" exclude("org.webjars", "jquery"),
     "org.webjars" % "angularjs" % "1.3.14" exclude("org.webjars", "jquery"),
     "org.webjars" % "angular-ui-bootstrap" % "0.12.1" exclude("org.webjars", "angularjs"),
-    "org.webjars" % "angular-chart.js" % "0.5.2" exclude("org.webjars", "angularjs")
+    "org.webjars" % "angular-chart.js" % "0.5.2" exclude("org.webjars", "angularjs"),
+    "net.codingwell" %% "scala-guice" % "4.0.0-beta5"
   )
 
   val hajpSpecific = Seq(
